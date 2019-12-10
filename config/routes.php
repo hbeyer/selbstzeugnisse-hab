@@ -25,8 +25,7 @@ $app->get('/edition/diarium/{metsId}', 'controller.dynamicpage:handle')
 $app->get('/edition/diarium/', 'controller.staticpage:handle')
     ->bind('edition.diarium');
 
-$app->get('/edition/personen', 'controller.staticpage:handle')
-    ->bind('edition.personen');
+$app->get('/edition/personen', 'controller.staticpage:handle')->bind('edition.personen');
 
 $app->get('/edition/orte', 'controller.staticpage:handle')
     ->bind('edition.orte');
@@ -65,3 +64,5 @@ $app->get('/dienste', 'controller.staticpage:handle')
 
 $app->get('/suche', 'controller.search:handle')
     ->bind('suche');
+
+$app->get('/ludwig-rudolf', 'controller.staticpage:handle')->bind('ludwig-rudolf');

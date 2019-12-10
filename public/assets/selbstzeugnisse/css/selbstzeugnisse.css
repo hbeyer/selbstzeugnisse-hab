@@ -243,24 +243,24 @@ i {
 
 .teaser {
     position: absolute;
-    left: 75em;
-    width: 500px;
+    left: 72em;
+    width: 624px;
 }
 
 .teaser li {
     float: left;
     max-width: 200px;
     width: 15em;
-    height: 400px;
+    height: 250px;
 }
 
 .teaser li + li {
-    margin-left: 1em;
+    margin-left: 12px;
 }
 
 .teaser > img {
-    padding: 1em;
-    margin-left: 40%;
+    margin-top:12px;
+    float:right;
 }
 
 .bg-blue {

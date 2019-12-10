@@ -176,6 +176,11 @@
         <FLocat xlink:href="daten/suche.xml.twig" LOCTYPE="URL"/>
       </file>
     </fileGrp>
+    <fileGrp>
+    	<file ID="ludwig_rudolf.cod_guelf_28_blank.xml" MIMETYPE="application/tei+xml">
+    		<FLocat xlink:href="daten/ludwig_rudolf/cod_guelf_28_blank.xml" LOCTYPE="URL" />
+    	</file>
+    </fileGrp>
     <xi:include href="daten/repertorium/mets.xml" xpointer="files"/>
   </fileSec>
   <structMap>
@@ -197,7 +202,7 @@
           <fptr FILEID="repertorium.register.xml"/>
         </div>
       </div>
-      <div ID="edition" LABEL="Edition">
+      <div ID="edition" LABEL="Diarium August II.">
         <fptr FILEID="edition.einleitung.xml"/>
         <div ID="edition.beschreibung" LABEL="Handschriften­beschreibung">
           <fptr FILEID="edition.beschreibung.xml"/>
@@ -208,7 +213,7 @@
         <div ID="edition.diarium.download">
           <fptr FILEID="edition.diarium.xml"/>
         </div>
-        <div ID="edition.diarium" LABEL="Diarium August II.">
+        <div ID="edition.diarium" LABEL="Edition">
           <fptr FILEID="edition.diarium.xml"/>
           <div ID="edition.diarium.front">
             <fptr FILEID="edition.diarium.front.xml"/>
@@ -341,6 +346,9 @@
           <fptr FILEID="edition.register.xml"/>
         </div>
       </div>
+      <div ID="ludwig-rudolf" LABEL="Tagebuch Ludwig Rudolf">
+        <fptr FILEID="ludwig_rudolf.cod_guelf_28_blank.xml"/>
+      </div>
       <div ID="projekt" LABEL="Projekt">
         <fptr FILEID="projekt.xml"/>
       </div>
@@ -394,9 +402,13 @@
       <interfaceDef LOCTYPE="URL" xlink:href="http://www.w3.org/TR/xslt"/>
       <mechanism LOCTYPE="URL" xlink:href="xslt/edition/download.xsl"/>
     </behavior>
-    <behavior STRUCTID="edition.diarium">
+	<behavior STRUCTID="edition.diarium">
       <interfaceDef LOCTYPE="URL" xlink:href="http://www.w3.org/TR/xslt"/>
       <mechanism LOCTYPE="URL" xlink:href="xslt/edition/diarium.xsl"/>
+    </behavior>    
+	<behavior STRUCTID="ludwig-rudolf">
+      <interfaceDef LOCTYPE="URL" xlink:href="http://www.w3.org/TR/xslt"/>
+      <mechanism LOCTYPE="URL" xlink:href="xslt/ludwig_rudolf/tagebuch.xsl"/>
     </behavior>
     <behavior STRUCTID="edition.personen">
       <interfaceDef LOCTYPE="URL" xlink:href="http://www.w3.org/TR/xslt"/>

@@ -22,9 +22,9 @@
           <li class="bg-lgrey">
             <img src="/assets/selbstzeugnisse/images/teaser/img002.jpg"/>
           </li>
-          <!-- <li class="bg-mgrey"> -->
-          <!--   <img src="/assets/selbstzeugnisse/images/teaser/img003.jpg"/> -->
-          <!-- </li> -->
+          <li class="bg-mgrey">
+             <img src="/assets/selbstzeugnisse/images/teaser/img003.jpg"/>
+          </li>
         </ul>
         <img src="/assets/selbstzeugnisse/images/banner_logo_nwk.png" />
       </div>
